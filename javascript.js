@@ -111,7 +111,7 @@ const clearDisplay = () => {
 }
 
 const inputEquals = () => {
-    if (result !== '' && result !== 'rly? <_<') {
+    if (!['', 'Infinity', 'rly? <_<'].includes(result)) {
         let answer = result
         clearDisplay()
         firstOperand = answer.toString()
